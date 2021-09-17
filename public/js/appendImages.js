@@ -1,5 +1,5 @@
 // append images from folder /img
-var folder = "/src-test/img/";
+var folder = "/public/img/";
 
 
 $.ajax({
