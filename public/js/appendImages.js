@@ -42,7 +42,7 @@ fail: function(xhr, textStatus, errorThrown){
 const linkArray = ["https://pbs.twimg.com/media/FAJQO4ZUUAQLBvO?format=jpg&name=small"]
 
 linkArray.forEach(url => {
-
+console.log(url)
 $.ajax({
   method: "GET",
   url: url,
