@@ -42,19 +42,19 @@ fail: function(xhr, textStatus, errorThrown){
   const linkArray = ['https://media.discordapp.net/attachments/752256861545299990/887331385969377351/CALLIIIIIIIIIII.gif']//'https://pbs.twimg.com/media/FAJQO4ZUUAQLBvO?format=png', 'https://pbs.twimg.com/media/E_KxUm9WEAM_9VT?format=png']
 
 linkArray.forEach(url => {
-console.log(url)
-$.ajax({
-  method: "GET",
-  url: url,
-  success: function(data) {
+try {
+  
+function clicked() {
+  var xhr = new XMLHttpRequest();
+  xhr.open(
+    "GET",
+    url
+  );
+  xhr.responseType = "json";
+  xhr.onload = function(i, val) {
     
-    $(data)
-      .find("a")
-      .attr("href", async function(i, val) {
-        if (val.match(/\.(jpe?g|png|gif)$/)) {
-          
-          var valueToAppend = '<img src="'+val+'"/>';
-          
+    var valueToAppend = '<img src="'+val+'"/>';
+        
           if (i <= 12) {
             
             await $("#column1").append(valueToAppend);
@@ -63,13 +63,12 @@ $.ajax({
             
             await $("#column2").append(valueToAppend);         
           }
-        }
-      });
-    
-  },
-fail: function(xhr, textStatus, errorThrown){
-  alert(`There was an Error, I'm sorry! :(\nPlease report this: ${errorThrown}`)
-  throw new Error(errorThrown)
-    }
-})
+  };
+  xhr.send();
+}
+} catch(e){
+  
+  alert(`There was an Error, I'm sorry! :(\nPlease report this: ${e.message}`)
+  throw new Error(e)
+}
   })
