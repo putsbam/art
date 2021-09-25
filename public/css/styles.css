@@ -103,6 +103,7 @@ section {
 
 body {
   line-height: 1;
+	display: inline-block;
 }
 
 ol,
@@ -267,7 +268,9 @@ html {
   font-size: 19pt;
 }
 
-#wrapper {
+#
+
+{
   -webkit-overflow-scrolling: touch;
   /*display: flex;*/
   -moz-flex-direction: column;
@@ -1168,7 +1171,6 @@ hr:before {
   position: relative;
   max-width: 100%;
   border-radius: inherit;
-display: inline-block;
 }
 
 .container > .wrapper > .inner {
