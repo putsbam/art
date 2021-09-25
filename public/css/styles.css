@@ -1170,7 +1170,6 @@ hr:before {
   position: relative;
   max-width: 100%;
   border-radius: inherit;
-display: flex;
 }
 
 .container > .wrapper > .inner {
