@@ -267,9 +267,7 @@ html {
   font-size: 19pt;
 }
 
-#
-
-{
+#wrapper {
   -webkit-overflow-scrolling: touch;
   /*display: flex;*/
   -moz-flex-direction: column;
@@ -3281,6 +3279,7 @@ body:after {
   display: table;
   clear: both;
 }
+
 .float{
 	position:fixed;
 	width:60px;
