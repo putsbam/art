@@ -103,7 +103,6 @@ section {
 
 body {
   line-height: 1;
-	display: inline-block;
 }
 
 ol,
@@ -1171,6 +1170,7 @@ hr:before {
   position: relative;
   max-width: 100%;
   border-radius: inherit;
+display: flex;
 }
 
 .container > .wrapper > .inner {
@@ -3287,12 +3287,13 @@ body:after {
 	width:60px;
 	height:60px;
 	bottom:40px;
-	right:20px;
+	right:40px;
 	background-image: linear-gradient(45deg, #51369C 0%, #EB7049 100%);
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
+	display: inline-block;
 }
 
 .my-float{
