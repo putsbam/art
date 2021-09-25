@@ -3285,8 +3285,8 @@ body:after {
 	width:60px;
 	height:60px;
 	bottom:40px;
-	right:40px;
-	background-color:#0C9;
+	right:20px;
+	background-image: linear-gradient(45deg, #51369C 0%, #EB7049 100%);;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
