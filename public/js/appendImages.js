@@ -1,6 +1,5 @@
 // append images from folder /img
-var folder = "/public/img/";
-
+/*var folder = "/public/img/";
 
 $.ajax({
   method: "GET",
@@ -37,3 +36,40 @@ fail: function(xhr, textStatus, errorThrown){
   throw new Error(errorThrown)
     }
 });
+*/
+// updating to get url(s) array but still thinking abt using this script later
+
+const linkArray = ["https://pbs.twimg.com/media/FAJQO4ZUUAQLBvO?format=jpg&name=small"]
+
+linkArray.forEach(url => {
+
+$.ajax({
+  method: "GET",
+  url: url,
+  success: function(data) {
+    
+    $(data)
+      .find("a")
+      .attr("href", async function(i, val) {
+        if (val.match(/\.(jpe?g|png|gif)$/)) {
+          
+          var valueToAppend = '<img src="'+val+'"/>';
+          
+          if (i <= 12) {
+            
+            await $("#column1").append(valueToAppend);
+            
+          } else {
+            
+            await $("#column2").append(valueToAppend);         
+          }
+        }
+      });
+    
+  },
+fail: function(xhr, textStatus, errorThrown){
+  alert(`There was an Error, I'm sorry! :(\nPlease report this: ${errorThrown}`)
+  throw new Error(errorThrown)
+    }
+})
+  })
