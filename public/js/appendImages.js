@@ -43,29 +43,10 @@ fail: function(xhr, textStatus, errorThrown){
 
 linkArray.forEach(url => {
 try {
-  
-function clicked() {
-  var xhr = new XMLHttpRequest();
-  xhr.open(
-    "GET",
-    url
-  );
-  xhr.responseType = "json";
-  xhr.onload = async function(i, val) {
-    
-    var valueToAppend = '<img src="'+val+'"/>';
-        
-          if (i <= 12) {
-            
-            await $("#column1").append(valueToAppend);
-            
-          } else {
-            
-            await $("#column2").append(valueToAppend);         
-          }
-  };
-  xhr.send();
-}
+var img = document.createElement("img");
+img.src = url
+var src = document.getElementById("column1");
+src.appendChild(img);
 } catch(e){
   
   alert(`There was an Error, I'm sorry! :(\nPlease report this: ${e.message}`)
