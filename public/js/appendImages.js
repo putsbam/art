@@ -51,7 +51,7 @@ function clicked() {
     url
   );
   xhr.responseType = "json";
-  xhr.onload = function(i, val) {
+  xhr.onload = async function(i, val) {
     
     var valueToAppend = '<img src="'+val+'"/>';
         
