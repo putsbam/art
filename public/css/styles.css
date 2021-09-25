@@ -1168,6 +1168,7 @@ hr:before {
   position: relative;
   max-width: 100%;
   border-radius: inherit;
+display: inline-block;
 }
 
 .container > .wrapper > .inner {
