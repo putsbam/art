@@ -52,13 +52,9 @@ img.src = url
   var column1 = document.getElementById("column1");
   var column2 = document.getElementById("column2");
   
-  if(linkArray.length <= linkArray.length/2){
-    
     column1.appendChild(img);
-    
-  } else {
     column2.appendChild(img);
-  }
+  
 } catch(e){
   
   alert(`There was an Error, I'm sorry! :(\nPlease report this: ${e}`)
