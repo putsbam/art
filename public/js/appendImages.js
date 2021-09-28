@@ -45,15 +45,20 @@ fail: function(xhr, textStatus, errorThrown){
 
 linkArray.forEach(url => {
 try {
+  
 var img = document.createElement("img");
 img.src = url
-  if(linkArray.length <= 12){
-var src = document.getElementById("column1");
-src.appendChild(img);
+  
+  var column1 = document.getElementById("column1");
+  var column2 = document.getElementById("column2");
+  
+  if(linkArray.length <= linkArray.length/2){
+    
+    column1.appendChild(img);
+    
   } else {
-var src2 = document.getElementById("column2");
-    src2.appendChild(img);
-}
+    column2.appendChild(img);
+  }
 } catch(e){
   
   alert(`There was an Error, I'm sorry! :(\nPlease report this: ${e}`)
