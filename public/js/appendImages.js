@@ -39,7 +39,9 @@ fail: function(xhr, textStatus, errorThrown){
 */
 // updating to get url(s) array but still thinking abt using this script later
 
-  const linkArray = ['https://media.discordapp.net/attachments/752256861545299990/887331385969377351/CALLIIIIIIIIIII.gif', 'https://pbs.twimg.com/media/FAJQO4ZUUAQLBvO?format=jpg&name=small']
+  const linkArray = ['https://media.discordapp.net/attachments/752256861545299990/887331385969377351/CALLIIIIIIIIIII.gif', 'https://pbs.twimg.com/media/FAJQO4ZUUAQLBvO?format=jpg&name=small', 'https://pbs.twimg.com/media/E_Kq_N4WQAQ2lI3?format=jpg&name=4096x4096', 'https://pbs.twimg.com/media/E_KxUm9WEAM_9VT?format=png&name=360x360', 'https://pbs.twimg.com/media/E_Kq_N_X0AABNH_?format=jpg&name=4096x4096', 'https://pbs.twimg.com/media/E_Kq_N_WUAALMsy?format=jpg&name=4096x4096', 'https://pbs.twimg.com/media/E8ys2M0XoAQPEi1?format=jpg&name=large', 'https://pbs.twimg.com/media/E8FabESWQAEVnvM?format=png&name=small', 'https://pbs.twimg.com/media/E8Df-aJXMAMv_58?format=png&name=small', 'https://pbs.twimg.com/media/E7K-8aXXEAo1Dgo?format=jpg&name=4096x4096', 'https://pbs.twimg.com/media/E3oqwXCXEAAm9Lf?format=jpg&name=4096x4096', 'https://pbs.twimg.com/media/ExMbrZqUYAwnVt_?format=jpg&name=large', 'https://pbs.twimg.com/media/EwD6HivXEAQL9hE?format=jpg&name=4096x4096', 'https://pbs.twimg.com/media/EvaNlsIXEAAUKz2?format=jpg&name=medium']
+  
+  console.log(linkArray.length);
 
 linkArray.forEach(url => {
 try {
