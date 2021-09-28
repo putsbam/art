@@ -39,7 +39,7 @@ fail: function(xhr, textStatus, errorThrown){
 */
 // updating to get url(s) array but still thinking abt using this script later
 
-  const linkArray = ['https://media.discordapp.net/attachments/752256861545299990/887331385969377351/CALLIIIIIIIIIII.gif']//'https://pbs.twimg.com/media/FAJQO4ZUUAQLBvO?format=png', 'https://pbs.twimg.com/media/E_KxUm9WEAM_9VT?format=png']
+  const linkArray = ['https://media.discordapp.net/attachments/752256861545299990/887331385969377351/CALLIIIIIIIIIII.gif', 'https://pbs.twimg.com/media/FAJQO4ZUUAQLBvO?format=jpg&name=small']
 
 linkArray.forEach(url => {
 try {
