@@ -44,7 +44,11 @@ fail: function(xhr, textStatus, errorThrown){
   console.log(linkArray.length);
 
 linkArray.forEach(url => {
+  
 try {
+ 
+let counter = 0;
+counter++
   
 var img = document.createElement("img");
 img.src = url
@@ -52,8 +56,9 @@ img.src = url
   var column1 = document.getElementById("column1");
   var column2 = document.getElementById("column2");
   
-    column1.appendChild(img);
-    column2.appendChild(img);
+  if(counter <= linkArray.length/2){
+    column1.appendChild(img)
+  } else column2.appendChild(img);
   
 } catch(e){
   
