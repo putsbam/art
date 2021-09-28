@@ -10,7 +10,7 @@ try {
   var column1 = document.getElementById("column1");
   var column2 = document.getElementById("column2");
   
-for(var i = 0; i == linkArray.length; i++){
+for(var i = 0; i >= linkArray.length; i++){
   
   if(i < linkArray.length/2){
     var img = document.createElement("img");
