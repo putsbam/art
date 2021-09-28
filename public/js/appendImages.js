@@ -45,7 +45,7 @@ fail: function(xhr, textStatus, errorThrown){
 
 try {
   
-for(let i = 0; i == linkArray.length; i++){
+for(var i = 0; i <= linkArray.length; i++){
   
 var img = document.createElement("img");
 img.src = linkArray[i]
