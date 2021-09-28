@@ -12,7 +12,7 @@ try {
   
 for(var i = 0; i <= linkArray.length; i++){
   
-  if(i <= linkArray.length/2){
+  if(i < linkArray.length/2){
     var img = document.createElement("img");
     img.src = linkArray[i]
     column1.appendChild(img)
