@@ -10,9 +10,9 @@ try {
   var column1 = document.getElementById("column1");
   var column2 = document.getElementById("column2");
   
-  linkArray.length = linkArray.length - 1 // for some reason the last position returns undefined O.o
+// for some reason the last position returns undefined O.o
   
-for(var i = 0; i <= linkArray.length; i++){
+for(var i = 0; i <= linkArray.length - 1; i++){
   
   if(i < linkArray.length/2){
     var img = document.createElement("img");
