@@ -17,9 +17,9 @@ for(var i = 0; i <= linkArray.length; i++){
     img.src = linkArray[i]
     column1.appendChild(img)
   } else { 
-   img = document.createElement("img");
-   img.src = linkArray[i]
-    column2.appendChild(img);
+   var img2 = document.createElement("img");
+   img2.src = linkArray[i]
+    column2.appendChild(img2);
   }
   
 }
