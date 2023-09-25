@@ -158,7 +158,7 @@
           <br />
           <section id="home-section" class="active">
             <p id="text04">Hello! my name is <strong>Bam</strong> :)</p>
-            <p id="text031">
+            <p id="text03" class="idadclass">
               <span>I'm a </span><span> years old traditional and (mostly) digital artist!</span
               ><br />
               <span>I've been into art since I was a child, pretty much my entire life!</span
@@ -167,9 +167,9 @@
               ><br/>
               <span>And if I can make something that will make people's dreams come true with my art, why not? That's why I do commissions <em>(also to buy my cats stuff lol)!</em></span
               ><br/>
-              <span><em>That's all folks!</em></span>
+              <span style="color:#FA4343;"><em>That's all folks!</em></span>
             </p>
-            <div id="image01" class="image">
+           <!-- <div id="image01" class="image">
               <img
                 src="https://pbs.twimg.com/media/E0kfMEFXIAYGPgw?format=png&name=small"
                 alt=""
@@ -188,7 +188,7 @@
                   :)
                 </a>
               </li>
-            </div>
+            </div>-->
           </section>
           <section
             id="commissions-section"
@@ -531,7 +531,7 @@
         var data = new Date()
         return parseInt(data.getFullYear()) - 2000
       }
-      var content = $('.text031').find('span', 'br');
+      var content = $('.idadclass').find('span', 'br');
       var insertion = parseInt(content.length / 8);
       content.eq(insertion).after(idad())
     </script>
