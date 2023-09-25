@@ -158,7 +158,7 @@
           <br />
           <section id="home-section" class="active">
             <p id="text04">Hello! my name is <strong>Bam</strong> :)</p>
-            <p id="text03">
+            <p id="text031">
               <span>I'm a </span><span> years old traditional and (mostly) digital artist!</span
               ><br />
               <span>I've been into art since I was a child, pretty much my entire life!</span
@@ -527,14 +527,13 @@
     <script src="/art/public/js/appendImages.js">
     </script>
     <script>
-      function idad(){
-      var data = new Date()
-      return parseInt(data.getFullYear()) - 2000 
-      } 
-    var content = $('.text03').find('span', 'br');
-var insertion = parseInt(content.length/8);
-content.eq(insertion).after(idad())
-      
+      function idad() {
+        var data = new Date()
+        return parseInt(data.getFullYear()) - 2000
+      }
+      var content = $('.text031').find('span', 'br');
+      var insertion = parseInt(content.length / 8);
+      content.eq(insertion).after(idad())
     </script>
     <script src="/art/public/js/clickCounter.js"></script>
     <script>
